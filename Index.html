@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tablero-kanban/css/style.css">
+    <title>Tablero Kanban</title>
+</head>
+<body>
+    <div class="kanban">
+        <h1 class="kanban__title">Tablero de Kanban</h1>
+        <div class ="kanban__input-container" >
+            <input type="text" id="taskInput" class="kanban__input" placeholder="Nueva tarea...">
+            <button id="addTaskButton" class="kanban__button kanban__button--add">Añadir</button>
+        </div>
+
+        <div class="kanban__board">
+            <div class="kanban__column">
+                <h2 class="kanban__column-title">Pendiente</h2>
+                <div id="pendingList" class="kanban__list"></div>
+            </div>
+
+            <div class="kanban__column">
+                <h2 class="kanban__column-title">En Progreso</h2>
+                <div id="progressList" class="kanban__list"></div>
+            </div>
+
+            <div class="kanban__column">
+                <h2 class="kanban__column-title">Completado</h2>
+                <div id="completedList" class="kanban__list"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="tablero-kanban/js/app.js"></script>
+</body>
+</html>
